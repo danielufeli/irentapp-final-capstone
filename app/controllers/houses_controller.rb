@@ -1,5 +1,5 @@
 class HousesController < ApplicationController
-  before_action :set_house, only: %i[ show update destroy ]
+  before_action :set_house, only: %i[show update destroy]
 
   # GET /houses
   def index
@@ -39,13 +39,14 @@ class HousesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_house
-      @house = House.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def house_params
-      params.require(:house).permit(:name, :image_url, :price, :city, :description, :capacity)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_house
+    @house = House.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def house_params
+    params.require(:house).permit(:name, :image_url, :price, :city, :description, :capacity)
+  end
 end
