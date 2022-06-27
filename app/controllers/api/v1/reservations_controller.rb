@@ -1,6 +1,6 @@
 class Api::V1::ReservationsController < ApplicationController
   before_action :set_reservation, only: %i[show update destroy]
-  ALLOWED_DATA = %[startDate, endDate, cost, user_id, house_id]
+  ALLOWED_DATA = %(startDate, endDate, cost, user_id, house_id).freeze
 
   # GET /reservations
   def index
@@ -16,7 +16,7 @@ class Api::V1::ReservationsController < ApplicationController
 
   # POST /reservations
   def create
-    @data = json_payload.select {|item| ALLOWED_DATA.include?(item)}
+    @data = json_payload.select { |item| ALLOWED_DATA.include?(item) }
     @reservation = Reservation.new(@data)
 
     if @reservation.save
