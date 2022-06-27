@@ -1,5 +1,6 @@
-class HousesController < ApplicationController
+class Api::V1::HousesController < ApplicationController
   before_action :set_house, only: %i[show update destroy]
+  ALLOWED_DATA = %(name, city, description, image_url, price, capacity, user_id).freeze
 
   # GET /houses
   def index
@@ -15,7 +16,9 @@ class HousesController < ApplicationController
 
   # POST /houses
   def create
-    @house = House.new(house_params)
+    data = json_payload.select { |item| ALLOWED_DATA.include?(item) }
+    @house = House.new(data)
+    # @house = House.new(house_params)
 
     if @house.save
       render json: @house, status: :created, location: @house
