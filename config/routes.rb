@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  resources :users
+  devise_for :users,
+  controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
+  get '/user-data', to: 'authentication#show'
+  # resources :users
   # resources :reservations
   # resources :houses
   namespace :api do
