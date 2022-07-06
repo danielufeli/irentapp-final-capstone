@@ -31,6 +31,6 @@ class Users::SessionsController < Devise::SessionsController
   end
 
   def login_failed
-    render json: { status: "error", message: 'Invalid email/password' }, status: :unprocessable_entity
+    render json: { status: 'error', message: 'Invalid email/password' }, status: :unprocessable_entity
   end
 end
