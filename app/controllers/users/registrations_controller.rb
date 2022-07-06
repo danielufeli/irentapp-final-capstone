@@ -17,6 +17,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def register_failed
-    render json: resource.errors, status: :unprocessable_entity
+    render json: { status: "error", message: resource.errors.full_messages }, status: :unprocessable_entity
   end
 end
