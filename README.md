@@ -143,7 +143,7 @@ Continue by solving any merge conflicts that may arise, test the functionality o
 
 Here is the [Kanban board](https://github.com/danielufeli/irentapp-final-capstone/projects/1) of the project!
 
-Here is the [issue](https://github.com/danielufeli/irentapp-final-capstone/issues/14) that contains the images of the initial state of the **Kanban board**
+Here is the [issue](https://github.com/danielufeli/irentapp-final-capstone/issues/15) that contains the images of the initial state of the **Kanban board**
 
 Final number of team members: 5
 
