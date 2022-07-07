@@ -16,6 +16,8 @@
 
 ## Api Documentation
 >You can review the documentation for the API [here]().
+
+>This is the [frontend repository](https://github.com/danielufeli/irentapp-frontend-capstone)
 <hr>
 
 ## Description
