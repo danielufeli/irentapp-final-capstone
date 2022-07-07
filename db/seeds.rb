@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-User.create!(name: "Jeff", admin: true)
-User.create!(name: "Daniel", admin: true)
-User.create!(name: "David", admin: false)
+User.create!(name: "Jeff", admin: true, email: "jeff@example.com", password: "jeffpassword")
+User.create!(name: "Daniel", admin: true, email: "daniel@example.com", password: "danielpassword")
+User.create!(name: "David", admin: false, email: "david@example.com", password: "davidpassword")
 
 House.create!(name: "Casa Blanca", image_url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60', price: 1000000, city: 'algers', description: 'large house', capacity: 20, user_id: 1)
 House.create!(name: "La Moneda", image_url: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60', price: 5000000, city: 'Lagos', description: 'large mansion', capacity: 25, user_id: 1)
