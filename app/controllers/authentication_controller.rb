@@ -1,5 +1,5 @@
 class AuthenticationController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   def show
     user_data = user_from_token
