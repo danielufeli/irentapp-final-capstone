@@ -18,10 +18,9 @@ class Api::V1::HousesController < ApplicationController
   def create
     data = json_payload.select { |item| ALLOWED_DATA.include?(item) }
     @house = House.new(data)
-    # @house = House.new(house_params)
-
+  
     if @house.save
-      render json: @house, status: :created, location: @house
+      render json: @house, status: :created
     else
       render json: @house.errors, status: :unprocessable_entity
     end
@@ -38,6 +37,7 @@ class Api::V1::HousesController < ApplicationController
 
   # DELETE /houses/1
   def destroy
+    @house = House.find(params[:id])
     @house.destroy
   end
 
