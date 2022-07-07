@@ -18,7 +18,7 @@ class Api::V1::HousesController < ApplicationController
   def create
     data = json_payload.select { |item| ALLOWED_DATA.include?(item) }
     @house = House.new(data)
-  
+
     if @house.save
       render json: @house, status: :created
     else
