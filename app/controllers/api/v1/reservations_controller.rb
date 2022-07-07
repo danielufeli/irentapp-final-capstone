@@ -4,7 +4,8 @@ class Api::V1::ReservationsController < ApplicationController
 
   # GET /reservations
   def index
-    @reservations = Reservation.all
+    @reservations = current_user.reservations
+
     render json: @reservations
   end
 
