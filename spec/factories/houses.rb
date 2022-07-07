@@ -2,7 +2,7 @@ require 'faker'
 
 FactoryBot.define do
   factory :house do
-    sequence(:name) { Faker::Mountain.name}
+    sequence(:name) { Faker::Mountain.name }
     sequence(:city) { Faker::Address.city }
     sequence(:image_url) { Faker::Internet.url }
     sequence(:description) { Faker::Lorem.word }
