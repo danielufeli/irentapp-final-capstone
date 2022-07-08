@@ -16,6 +16,8 @@
 
 ## Api Documentation
 >You can review the documentation for the API [here]().
+
+>This is the [frontend repository](https://github.com/danielufeli/irentapp-frontend-capstone)
 <hr>
 
 ## Description
@@ -76,6 +78,11 @@ rails --version
 
 We're getting there... trust me ;)
 
+Create the master key
+Open the config folder and create a file named: `master.key` 
+Once it's created copy and paste the following key in it `8a994df6cf8c92ebbcf62224d96253ae`
+Do not press space or enter after pasting the key, just save.
+
 ## System Dependencies
 
 Execute this command to automatically install all the dependencies needed to view and work on this project:
@@ -93,6 +100,12 @@ This also installs PostgreSQL, which you'll need for the next step.
 To initialize the database we just created, now run:
 ~~~ bash
 rails db:setup
+~~~
+or if you experienced issues, run the following sequence
+~~~
+rails db:create
+rails db:migrate
+rails db:seed
 ~~~
 <hr>
 
@@ -143,7 +156,7 @@ Continue by solving any merge conflicts that may arise, test the functionality o
 
 Here is the [Kanban board](https://github.com/danielufeli/irentapp-final-capstone/projects/1) of the project!
 
-Here is the [issue](https://github.com/danielufeli/irentapp-final-capstone/issues/14) that contains the images of the initial state of the **Kanban board**
+Here is the [issue](https://github.com/danielufeli/irentapp-final-capstone/issues/15) that contains the images of the initial state of the **Kanban board**
 
 Final number of team members: 5
 
