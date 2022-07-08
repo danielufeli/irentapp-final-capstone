@@ -78,6 +78,11 @@ rails --version
 
 We're getting there... trust me ;)
 
+Create the master key
+Open the config folder and create a file named: `master.key` 
+Once it's created copy and paste the following key in it `8a994df6cf8c92ebbcf62224d96253ae`
+Do not press space or enter after pasting the key, just save.
+
 ## System Dependencies
 
 Execute this command to automatically install all the dependencies needed to view and work on this project:
