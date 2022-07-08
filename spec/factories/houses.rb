@@ -8,7 +8,6 @@ FactoryBot.define do
     sequence(:description) { Faker::Lorem.word }
     sequence(:price) { Faker::Number.non_zero_digit }
     sequence(:capacity) { Faker::Number.non_zero_digit }
-    user = User.first
     user_id { user.id }
   end
 end
