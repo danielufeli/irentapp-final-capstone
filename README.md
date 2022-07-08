@@ -101,6 +101,12 @@ To initialize the database we just created, now run:
 ~~~ bash
 rails db:setup
 ~~~
+or if you experienced issues, run the following sequence
+~~~
+rails db:create
+rails db:migrate
+rails db:seed
+~~~
 <hr>
 
 ## Usage
