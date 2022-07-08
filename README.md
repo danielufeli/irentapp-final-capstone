@@ -74,6 +74,11 @@ rails --version
 ~~~
 <hr>
 
+## Live Demo 🌐
+
+### [iRent Link](https://fast-lowlands-73397.herokuapp.com/)
+
+
 ## Setup
 
 We're getting there... trust me ;)
